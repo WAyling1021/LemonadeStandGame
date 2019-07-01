@@ -10,6 +10,7 @@ namespace LemonadeStandGame
     {
         static void Main(string[] args)
         {
+
         }
     }
 }

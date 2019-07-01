@@ -8,5 +8,12 @@ namespace LemonadeStandGame
 {
     class Customer
     {
+        //member variables 
+        //Customer has money 
+        int money; 
+
+        //constructor 
+
+        //member methods 
     }
 }

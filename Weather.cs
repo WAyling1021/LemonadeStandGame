@@ -8,5 +8,11 @@ namespace LemonadeStandGame
 {
     class Weather
     {
+        //member variables 
+
+        //constructor 
+
+        //member methods 
+
     }
 }
