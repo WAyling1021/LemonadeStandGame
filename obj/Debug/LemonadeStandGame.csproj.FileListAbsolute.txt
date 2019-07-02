@@ -1,0 +1,7 @@
+\\Mac\Home\Desktop\LemonadeStandGame\bin\Debug\LemonadeStandGame.exe.config
+\\Mac\Home\Desktop\LemonadeStandGame\bin\Debug\LemonadeStandGame.exe
+\\Mac\Home\Desktop\LemonadeStandGame\bin\Debug\LemonadeStandGame.pdb
+\\Mac\Home\Desktop\LemonadeStandGame\obj\Debug\LemonadeStandGame.csprojAssemblyReference.cache
+\\Mac\Home\Desktop\LemonadeStandGame\obj\Debug\LemonadeStandGame.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\LemonadeStandGame\obj\Debug\LemonadeStandGame.exe
+\\Mac\Home\Desktop\LemonadeStandGame\obj\Debug\LemonadeStandGame.pdb

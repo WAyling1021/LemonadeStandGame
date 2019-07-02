@@ -8,17 +8,22 @@ namespace LemonadeStandGame
 {
     class Day
     {
-        //member variables 
+        //member varaibles
+        public Weather weather;
+        List<string> daysOfTheWeekList;
+        // list of customers
 
         //constructor 
 
-        //member methods
-        private Random gen = new Random();
-        DateTime RandomDay()
+        //member methods  
+        public void DaysOfTheWeek()
         {
-            DateTime start = new DateTime(2019, 1, 1);
-            int range = (DateTime.Today - start).Days;
-            return start.AddDays(gen.Next(range)); 
+             daysOfTheWeekList = new List<string>() { "Monday", "Tuesday", "Wedenesday", "Thursday", "Friday", "Saturday", "Sunday" };
+
         }
+
+
+
+
     }
 }
