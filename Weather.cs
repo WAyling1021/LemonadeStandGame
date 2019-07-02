@@ -33,9 +33,9 @@ namespace LemonadeStandGame
         }
         public void RandomTemperture()
         {
-            Random Temp = new temp();
+            Random rng = new Random();
         }
-        
+
 
 
 

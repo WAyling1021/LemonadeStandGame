@@ -10,6 +10,7 @@ namespace LemonadeStandGame
     {
         //member variables
         //Incrediants 
+        public Inventory inventory;
         public double lemons;
         public double sugar;
         public double water;

@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace LemonadeStandGame
 {
-    class Game
+    class Game // : inheritance => (IS A TYPE OF)
     {
-        //member variables 
+        //member variables (HAS A)
         public Player player;
+        // list of days
 
         //constructor
         public void LemonGame()
@@ -18,7 +19,7 @@ namespace LemonadeStandGame
         }
         public void RunGame()
         {
-
+            
         }
 
         //member methods 
