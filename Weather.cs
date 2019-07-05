@@ -8,13 +8,19 @@ namespace LemonadeStandGame
 {
     class Weather
     {
-        //member variables 
+        //member variables (HAS A)
         //temperture/ forecast
         public int temperture;
         public string forecast;
+        public Day day; 
         List<string> weatherForecastList;
+
+
         //constructor
-       
+        public Weather()
+        {
+
+        }
 
         //member methods 
 
@@ -29,42 +35,16 @@ namespace LemonadeStandGame
             Random randomNumberGenerator = new Random();
             int indexNumber = randomNumberGenerator.Next(5);
             forecast = weatherForecastList[indexNumber];
-            return forecast; 
+            return forecast;
         }
-        public void RandomTemperture()
+        public int RandomTemperture()
         {
-            Random rng = new Random();
+            Random randomNumberGenerator = new Random();
+            temperture = randomNumberGenerator.Next(65, 100);
+            return temperture;
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        //public const int totalDays = 7;
-        //public const int minTemp = 65;
-        //public const int maxTemp = 99;
-        //public static Day[] days = new Day[totalDays];
-
-
-
 
     }
+
 
 }

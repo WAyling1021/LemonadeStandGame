@@ -15,6 +15,10 @@ namespace LemonadeStandGame
         // list of customers
 
         //constructor 
+        public Day()
+        {
+
+        }
 
         //member methods  
         public void DaysOfTheWeek()
@@ -22,11 +26,9 @@ namespace LemonadeStandGame
              daysOfTheWeekList = new List<string>() { "Monday", "Tuesday", "Wedenesday", "Thursday", "Friday", "Saturday", "Sunday" };
 
         }
-        public string GetDays()
+        public string GetDays(int dayNumber)
         {
-            Random randomNumberGenerator = new Random();
-            int indexNumber = randomNumberGenerator.Next(6);
-            days = daysOfTheWeekList[indexNumber];
+            days = daysOfTheWeekList[dayNumber];
             return days; 
         }
 

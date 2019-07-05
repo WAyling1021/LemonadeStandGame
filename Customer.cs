@@ -11,7 +11,6 @@ namespace LemonadeStandGame
         //member variables 
         //Customer has money 
         Customer customer = new Customer();
-        
         int money; 
 
 

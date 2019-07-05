@@ -9,6 +9,8 @@ namespace LemonadeStandGame
     class UserInterface
     {
         //member variables 
+       
+
 
         //constructor 
 

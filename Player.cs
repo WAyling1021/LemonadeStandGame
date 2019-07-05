@@ -12,14 +12,19 @@ namespace LemonadeStandGame
         public string name;
         public int money;
         public Store store;
-        public Inventory inventory; 
+        public Inventory myInventory;
 
-        //constructor 
+        //constructor
+        public Player()
+        {
+            Console.WriteLine("");
+            myInventory = new Inventory(0, 0, 0, 0);
+        }
 
         //member methods 
         public void PlayerWallet()
         {
-
+            money = 25;
         }
     }
 }
