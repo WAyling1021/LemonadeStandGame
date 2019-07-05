@@ -12,12 +12,16 @@ namespace LemonadeStandGame
         public Weather weather;
         public string days;
         List<string> daysOfTheWeekList;
+        List<string> Name = new List<string>();
+        //AddName();
+        
+
         // list of customers
 
         //constructor 
         public Day()
         {
-
+            AddName();
         }
 
         //member methods  
@@ -31,9 +35,24 @@ namespace LemonadeStandGame
             days = daysOfTheWeekList[dayNumber];
             return days; 
         }
-
-
-
-
+        public void AddName()
+        {
+            Name.Add("Ryan");
+            Name.Add("Jake");
+            Name.Add("Ben");
+            Name.Add("Alex");
+            Name.Add("John");
+            Name.Add("Travis");
+            Name.Add("Joe");
+            Name.Add("Sam");
+            Name.Add("Harry");
+            Name.Add("Ricky");
+            Name.Add("Stephannie");
+            Name.Add("Chris");
+            Name.Add("Daniel");
+            Name.Add("Alice");
+            Name.Add("James");
+            Name.Add("Luke");
+        }
     }
 }

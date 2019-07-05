@@ -11,11 +11,16 @@ namespace LemonadeStandGame
         //member variables 
         //Customer has money 
         Customer customer = new Customer();
-        int money; 
+        int money;
 
 
         //constructor 
 
-        //member methods 
+        //member methods
+        //customer buys lemonade 
+        public Customer()
+        {
+
+        }
     }
 }

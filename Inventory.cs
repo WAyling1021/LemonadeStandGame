@@ -21,7 +21,7 @@ namespace LemonadeStandGame
 
         //constructor 
         //Inventory of these incrediants 
-        public void InventoryItems()
+        public Inventory()
         {
 
         }

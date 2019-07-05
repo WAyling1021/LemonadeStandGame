@@ -18,7 +18,7 @@ namespace LemonadeStandGame
         public Player()
         {
             Console.WriteLine("");
-            myInventory = new Inventory(0, 0, 0, 0);
+            myInventory = new Inventory();
         }
 
         //member methods 
