@@ -17,8 +17,6 @@ namespace LemonadeStandGame
         public double ice;
         public double cups;
 
-
-
         //constructor 
         //Inventory of these incrediants 
         public Inventory()
@@ -27,5 +25,9 @@ namespace LemonadeStandGame
         }
 
         //member methods 
+        public void Inventory()
+        {
+
+        }
     }
 }

@@ -9,11 +9,13 @@ namespace LemonadeStandGame
     class UserInterface
     {
         //member variables 
-       
-
 
         //constructor 
 
         //member methods 
+        public static UserInterface()
+        {
+           
+        }
     }
 }

@@ -10,7 +10,9 @@ namespace LemonadeStandGame
     {
         //member variables (HAS A)
         public Player player;
+        public Day day;
         Rules rules;
+        public Store store;
         // list of days
 
         //constructor
@@ -26,7 +28,10 @@ namespace LemonadeStandGame
             weather.WeatherForeCast();
             weather.RandomTemperture();
             Day day = new Day();
-            
+
+            // day.weather.WeatherForeCast();
+
+
         }
       
 

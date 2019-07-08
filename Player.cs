@@ -17,7 +17,7 @@ namespace LemonadeStandGame
         //constructor
         public Player()
         {
-            Console.WriteLine("");
+            Console.WriteLine("How much would you like to buy today?");
             myInventory = new Inventory();
         }
 

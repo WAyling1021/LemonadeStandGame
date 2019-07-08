@@ -10,9 +10,9 @@ namespace LemonadeStandGame
     {
         //member variables 
         //Customer has money 
-        Customer customer = new Customer();
         int money;
-
+        public string name;
+        public int chanceToBuy;
 
         //constructor 
 
@@ -20,7 +20,46 @@ namespace LemonadeStandGame
         //customer buys lemonade 
         public Customer()
         {
+            chanceToBuy = 50;
+        }
+
+        public void MakeDecision(Weather currentWeather, double priceOfLemonade)
+        {
+            if(currentWeather.temperture < 40)
+            {
+                chanceToBuy -= 15;
+            }
+            else if (currentWeather.temperture < 40)
+            {
+                chanceToBuy -= 15;
+            }
+            else if (currentWeather.temperture < 40)
+            {
+                chanceToBuy -= 15;
+            }
+            else if (currentWeather.temperture < 40)
+            {
+                chanceToBuy -= 15;
+            }
+            else if (currentWeather.temperture < 40)
+            {
+                chanceToBuy -= 15;
+            }
+            else if (currentWeather.temperture < 40)
+            {
+                chanceToBuy -= 15;
+            }
+            else if (currentWeather.temperture < 40)
+            {
+                chanceToBuy -= 15;
+            }
+            else
+            {
+
+            }
 
         }
+
+
     }
 }

@@ -13,6 +13,7 @@ namespace LemonadeStandGame
         public string days;
         List<string> daysOfTheWeekList;
         List<string> Name = new List<string>();
+        // public List<Customer> customers;
         //AddName();
         
 
@@ -25,6 +26,43 @@ namespace LemonadeStandGame
         }
 
         //member methods  
+        public void DetermineNumberOfCustomers()
+        {
+            if(weather.temperture > 70)
+            {
+                Console.WriteLine("");
+            }
+            else if(weather.temperture < 20)
+            {
+                Console.WriteLine("");
+            }
+            else if (weather.temperture < 20)
+            {
+                Console.WriteLine("");
+            }
+            else if (weather.temperture < 20)
+            {
+                Console.WriteLine("");
+            }
+            else if (weather.temperture < 20)
+            {
+                Console.WriteLine("");
+            }
+            else if (weather.temperture < 20)
+            {
+                Console.WriteLine("");
+            }
+            else if (weather.temperture < 20)
+            {
+                Console.WriteLine("");
+            }
+            else
+            {
+
+            }
+           
+        }
+
         public void DaysOfTheWeek()
         {
              daysOfTheWeekList = new List<string>() { "Monday", "Tuesday", "Wedenesday", "Thursday", "Friday", "Saturday", "Sunday" };
