@@ -13,6 +13,7 @@ namespace LemonadeStandGame
         public int money;
         public Store store;
         public Inventory myInventory;
+        public double priceOfLemonade;
 
         //constructor
         public Player()
@@ -25,6 +26,11 @@ namespace LemonadeStandGame
         public void PlayerWallet()
         {
             money = 25;
+        }
+        public void PriceForCurrentDay()
+        {
+            Console.WriteLine("What price do you want for the current day?");
+            string userinput = Console.ReadLine(); 
         }
     }
 }

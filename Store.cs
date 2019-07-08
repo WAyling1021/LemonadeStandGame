@@ -30,7 +30,12 @@ namespace LemonadeStandGame
         //member methods 
         public void BuyItem()
         {
-
+            Console.WriteLine("How many lemons do you want to buy for the day?");
+            Console.WriteLine("How much sugar do you want to buy for the day?");
+            Console.WriteLine("How much water do you want to buy for the day?");
+            Console.WriteLine("How much ice do you want to buy for the day?");
+            Console.WriteLine("How many cups do you want to buy for the day?");
+            Console.ReadLine();
         }
     }
 }

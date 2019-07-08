@@ -13,9 +13,6 @@ namespace LemonadeStandGame
         //constructor 
 
         //member methods 
-        public static UserInterface()
-        {
-           
-        }
+       
     }
 }

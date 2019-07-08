@@ -8,53 +8,58 @@ namespace LemonadeStandGame
 {
     class Day
     {
-        //member varaibles
+        //member variables
         public Weather weather;
         public string days;
         List<string> daysOfTheWeekList;
         List<string> Name = new List<string>();
-        // public List<Customer> customers;
-        //AddName();
-        
-
-        // list of customers
+        List<Customer> customers;
+        Customer customer;
+        Random rng;
 
         //constructor 
         public Day()
         {
             AddName();
+            customers = new List<Customer>();
+            Name = new List<string>();
+            rng = new Random();
         }
 
         //member methods  
         public void DetermineNumberOfCustomers()
         {
-            if(weather.temperture > 70)
+            if(weather.temperture > 65)
             {
-                Console.WriteLine("");
+                Console.WriteLine("You'll get 32 customers");
             }
-            else if(weather.temperture < 20)
+            else if(weather.temperture < 70)
             {
-                Console.WriteLine("");
+                Console.WriteLine("You'll get 48 customers");
             }
-            else if (weather.temperture < 20)
+            else if (weather.temperture < 75)
             {
-                Console.WriteLine("");
+                Console.WriteLine("You'll get 59 customers");
             }
-            else if (weather.temperture < 20)
+            else if (weather.temperture < 80)
             {
-                Console.WriteLine("");
+                Console.WriteLine("You'll get 79 customers");
             }
-            else if (weather.temperture < 20)
+            else if (weather.temperture < 85)
             {
-                Console.WriteLine("");
+                Console.WriteLine("You'll get 102 customers");
             }
-            else if (weather.temperture < 20)
+            else if (weather.temperture < 90)
             {
-                Console.WriteLine("");
+                Console.WriteLine("You'll get 164 customers");
             }
-            else if (weather.temperture < 20)
+            else if (weather.temperture < 95)
             {
-                Console.WriteLine("");
+                Console.WriteLine("You'll get 190 customers");
+            }
+            else if (weather.temperture < 100)
+            {
+                Console.WriteLine("You'll get 204 customers");
             }
             else
             {
@@ -85,12 +90,20 @@ namespace LemonadeStandGame
             Name.Add("Sam");
             Name.Add("Harry");
             Name.Add("Ricky");
-            Name.Add("Stephannie");
+            Name.Add("Stephanie");
             Name.Add("Chris");
             Name.Add("Daniel");
             Name.Add("Alice");
             Name.Add("James");
             Name.Add("Luke");
         }
+        public void GenerateRandomCustomer() 
+        {
+            int randomNumber = rng.Next(0, Name.Count);
+
+            customer = new Customer(Name[randomNumber]);
+            customer.MakeDecision(priceOfLemonade);
+        }
+
     }
 }

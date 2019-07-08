@@ -17,17 +17,14 @@ namespace LemonadeStandGame
         public double ice;
         public double cups;
 
-        //constructor 
-        //Inventory of these incrediants 
+        //constructor
+        //Inventory of these incrediants
         public Inventory()
         {
 
         }
 
         //member methods 
-        public void Inventory()
-        {
-
-        }
+        
     }
 }
