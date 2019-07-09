@@ -32,5 +32,6 @@ namespace LemonadeStandGame
             Console.WriteLine("What price do you want for the current day?");
             string userinput = Console.ReadLine(); 
         }
+
     }
 }

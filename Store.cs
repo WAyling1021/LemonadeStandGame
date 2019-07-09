@@ -28,14 +28,41 @@ namespace LemonadeStandGame
         }
 
         //member methods 
-        public void BuyItem()
+        public void BuyItem(Player player, string item, double itemPrice)
         {
-            Console.WriteLine("How many lemons do you want to buy for the day?");
-            Console.WriteLine("How much sugar do you want to buy for the day?");
-            Console.WriteLine("How much water do you want to buy for the day?");
-            Console.WriteLine("How much ice do you want to buy for the day?");
-            Console.WriteLine("How many cups do you want to buy for the day?");
-            Console.ReadLine();
+            Console.WriteLine($"How many {item} do you want to buy for the day?");
+            int numberToBuy = int.Parse(Console.ReadLine());
+            double totalCost = numberToBuy * itemPrice;
+            if(totalCost <= player.money)
+            {
+                IncreaseInventory(player, item, numberToBuy);
+            }
+            else
+            {
+                Console.WriteLine("You don't have enough money"); 
+            }
+        }
+        public void IncreaseInventory(Player player, string item, int numberToBuy)
+        {
+            switch (item)
+            {
+                case "lemon":
+                    player.myInventory.lemons += numberToBuy;
+                    break;
+                case "sugar":
+                    player.myInventory.sugar += numberToBuy;
+                    break;
+                case "water":
+                    player.myInventory.water += numberToBuy;
+                    break;
+                case "ice":
+                    player.myInventory.ice += numberToBuy;
+                    break;
+                case "cup":
+                    player.myInventory.cups += numberToBuy;
+                    break;
+            }
+                
         }
     }
 }

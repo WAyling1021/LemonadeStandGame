@@ -16,10 +16,14 @@ namespace LemonadeStandGame
         List<Customer> customers;
         Customer customer;
         Random rng;
+        
+
+
 
         //constructor 
-        public Day()
+        public Day(Weather weather)
         {
+            this.weather = weather;
             AddName();
             customers = new List<Customer>();
             Name = new List<string>();
@@ -102,7 +106,7 @@ namespace LemonadeStandGame
             int randomNumber = rng.Next(0, Name.Count);
 
             customer = new Customer(Name[randomNumber]);
-            customer.MakeDecision(priceOfLemonade);
+            customer.MakeDecision(weather,0.25);
         }
 
     }
